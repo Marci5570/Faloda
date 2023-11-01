@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: url('assets/nagy_hatter.jpg') no-repeat center/cover;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  color: white;
+  background-color: rgb(102, 81, 54);
+  width: 10vw;
+  height: 2vw;
+}
+
+.heading h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 0.2rem;
+  padding-bottom: 30px;
+}
+
+.heading h4:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: rgb(102, 81, 54);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.single-menu {
+  text-align: center;
+  flex-basis: 32%;
+}
+
+.single-menu h2 {
+  background-color: rgb(102, 81, 54);
+  color: #fff;
+  padding: 10px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.menu-box {
+  transition: .3s;
+  border: 2px solid #f4f4f4;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-bottom: 3px solid #ddd;
+  background-color: white;
+}
+
+.menu-box img {
+  max-width: 100px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+.menu-box h4 {
+  text-transform: capitalize;
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 22px;
+  border-top: 1px dashed #ddd;
+}
+
+.menu-box {
+  transition: .3s;
+}
+
+.menu-box img {
+  transition: .3s;
+}
+
+.menu-box:hover img {
+  border-radius: 0;
+}
+
+.menu-box h4 span {
+  color: tomato;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 400px;
+  }
+
+  .single-menu {
+    flex-basis: 100%;
+  }
+}
+
+nav ul {
+  background-color: rgb(102, 81, 54);
+  text-align: center;
+}
+
+nav li {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+  margin-left: 5rem;
+  white-space: nowrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+nav a:hover {
+  color: #eda087;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a.active {
+  background-color: white;
+  color: #eee;
+}
+
+@media (min-width: 600px) {
+
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+}
+
+.ikon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  body {
+    background: url(assets/background.png) repeat center;
+    font-size: 1rem;
+  }
+
+  .heading {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+  }
+
+  .heading h4 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+
+  .heading h4:before {
+    width: 60px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin-left: 0;
+    border-bottom: 1px solid #ccc;
+  }
+}

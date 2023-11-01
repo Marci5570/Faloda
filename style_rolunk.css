@@ -1,0 +1,257 @@
+/* =============================
+    GENERAL STYLES
+=============================*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.locations,
+.daily-menu,
+.gifts,
+.faq,
+.contact {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color 0.15s ease-in-out;
+}
+
+/* =============================
+        HEADER STYLES
+  =============================*/
+
+.cover {
+    background: url('assets/nagy_hatter.jpg') no-repeat 70% center/cover;
+    display: table;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .cover {
+        background: url('assets/nagy_hatter.jpg') no-repeat center/cover;
+    }
+}
+
+.hero-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero-text {
+    margin: 0 auto;
+    padding: 0.625rem;
+    color: hsla(0, 0%, 100%, 0.9);
+    background: hsla(100, 0%, 0%, 0.5);
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.15rem;
+    color: white;
+    margin-bottom: 0;
+    font-size: 7rem;
+    /* To negate the effect of the single-direction margin declaration. */
+}
+
+.tagline {
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+}
+
+@media (min-width: 768px) {
+    .tagline {
+        text-transform: uppercase;
+    }
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: 0.5rem auto;
+}
+
+.date {
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+/* =============================
+        FOOTER STYLES
+  =============================*/
+
+footer {
+    height: 2vh;
+    width: 100%;
+    background-color: #606060;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: table;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.5rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer small {
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    footer {
+        min-height: 7vh;
+    }
+}
+
+
+nav ul {
+    background-color: rgb(102, 81, 54);
+    text-align: center;
+}
+
+nav li {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 5rem;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav a:hover {
+    color: beige;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a.active {
+    background-color: white;
+    color: #eee;
+}
+
+@media (min-width: 600px) {
+    nav li {
+        display: inline-block;
+        border-bottom: none;
+        width: 7.5rem;
+    }
+}
+
+.ikon {
+    font-size: 1.5rem;
+}
+
+.restaurant-info {
+    background-color: white;
+    text-align: left;
+    width: 40vw;
+    height: 30vw;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 20%;
+    box-shadow: 20px 20px 20px black;
+}
+
+.restaurant-info-content {
+    margin: auto;
+    padding: 12%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.restaurant-info-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.p_kezdo {
+    margin-top: 2rem;
+}
+
+.kep1 {
+    width: 35vw;
+    position: absolute;
+    top: 30rem;
+    right: 23rem;
+}
+
+.kep2 {
+    width: 35vw;
+    position: absolute;
+    top: 8rem;
+    right: 0rem;
+
+}
+
+.belso {
+    width: 60%;
+    border: 2px solid #333;
+    box-shadow: 20px 20px 20px black;
+    border-radius: 20%;
+}
+
+.kulso {
+    width: 40%;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 40px black;
+    border-radius: 20%;
+}
